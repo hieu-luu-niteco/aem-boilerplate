@@ -36,6 +36,14 @@ indices:
         select: head > meta[name="topics"]
         value: |
           attribute(el, 'content')
+      custom-metadata:
+        select: head > meta[name="custom-metadata-attribute"]
+        value: |
+          attribute(el, 'content')
+      topics:
+        select: head > meta[name="topics"]
+        value: |
+          attribute(el, 'content')          
       lastModified:
         select: none
         value: |
